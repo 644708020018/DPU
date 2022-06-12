@@ -1,29 +1,25 @@
-class Switch():
-    def __init__(self):
-        self.switch_status = False
+# person.py
+class Person:
+    # parameterized constructor
+    def __init__(self, name, gender, profession):
+        # data members (instance attributes)
+        self.name = name
+        self.gender = gender
+        self.profession = profession
 
-    def turnOn(self):
-        self.switch_status = True
+    # Behavior (instance methods)
+    def show(self):
+        print(f'Name: {self.name} Sex: {self.gender} Profession: {self.profession}')
 
-    def turnOff(self):
-        self.switch_status = False
+    # Behavior (instance methods)
+    def work(self):
+        print(f'{self.name} working as a {self.profession}')
+   
+    # Deconstructor
+    def __del__(self):
+        print("Object was destroyed")
 
-    def show_status(self):
-        if (self.switch_status):
-            print ("ไฟเปิด")
-        else:
-            print ("ไฟปิด")
-sobj = Switch()
-
-if __name__ == "__main__":
-    sobj.show_status()
-    sobj.turnOn()
-    sobj.show_status()
-    sobj.turnOff()
-    sobj.show_status()
-    sobj.turnOff()
-    sobj.show_status()
-    sobj.turnOff()
-    sobj.show_status()
-    sobj.turnOff()
-    sobj.show_status()
+# create the object of a Person class
+jessa = Person('Jessa', 'Female', 'Software Engineer')
+jessa.show()
+jessa.work()
