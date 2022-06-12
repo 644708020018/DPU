@@ -1,5 +1,6 @@
 #Test python
-test="hello"
 
-print ("test")
+test="hello Word"
+print (test)
 
+print ("hello" + "word")
