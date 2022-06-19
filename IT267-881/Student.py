@@ -1,3 +1,6 @@
+from xml.etree.ElementInclude import default_loader
+
+
 class Student:
     def __init__(self, id:int, name:str, major:str):
         self.id = id
@@ -7,14 +10,17 @@ class Student:
     def display_detail(self):
         print(f"id  : {self.id}")
         print(f"name  : {self.name}")
-        print(f"major  : {self.major}")
+        print(f"major  : {self.major} \n")
 
-    def __del__(self):
-        print("object was destroyed")
+    #def __del__(self):
+        #print("object was destroyed")
 
 if __name__ == "__main__":
-    my_student = Student(111, "Jessica", "IT")
-    my_student.display_detail()
+    Jessica = Student(111, "Jessica", "IT")
+    Jessica.display_detail()
 
-    my_student = Student(112, "John", "MKT")
-    my_student.display_detail()
+    john = Student(112, "John", "MKT")
+    john.display_detail()
+
+    jame = Student(113, "jame", "acc")
+    jame.display_detail()
