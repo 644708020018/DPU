@@ -1,0 +1,19 @@
+#เรียกใช้คลาส Customer
+#1   from cusorder.customer import customer
+    opj = customer()
+#2   from cusorder import customer
+    opj = customer.customer()
+
+#เรียกใช้คลาส Order, OrderDetail และ Item
+#1    from cusorder.order import order
+#1    from cusorder.order_detail import order_detail
+#1    from cusorder.item import item
+
+#2    from cusorder import order, order_detail, item
+
+#คลาส Cash เรียกใช้คลาส Payment
+#1   from cusorder.Cash import Cash
+        opj = Cash()
+
+#2    from cusorder import Cash
+        opj = Cash.Cash()

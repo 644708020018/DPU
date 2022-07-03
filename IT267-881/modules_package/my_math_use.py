@@ -1,12 +1,13 @@
-import my_math
 
 #วิธีที่ 1
-#print (f' PI = {my_math.PI}')
-#print (f'sqrt of 5 = {my_math.sqrt(5)}')
-#print (f'circle_area = {my_math.circle_area(2):,.2f}')
+from my_math import PI,sqrt,circle_area
+print (f' PI = {PI}')
+print (f'sqrt of 5 = {sqrt(5)}')
+print (f'circle_area = {circle_area(2):,.2f}')
 
 #วิธีที่ 2
-#from my_math import PI,sqrt,circle_area
-print (f' PI = {my_math.PI}')
-print (f'sqrt of 5 = {my_math.sqrt(5)}')
-print (f'circle_area = {my_math.circle_area(2):,.2f}')
+#import my_math as my
+#print (f' PI = {my.PI}')
+#print (f'sqrt of 5 = {my.sqrt(5)}')
+#print (f'circle_area = {my.circle_area(2):,.2f}')
+
