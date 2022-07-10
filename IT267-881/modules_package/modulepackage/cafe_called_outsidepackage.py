@@ -4,7 +4,7 @@
 #desserts = Drinks()
 
 #วิธีที่ 2
-from cafe import cafe_module
+from cafe import cafe_module as 
 
 desserts = cafe_module.Drinks()
 print(desserts.show_desserts())
