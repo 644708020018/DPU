@@ -7,7 +7,7 @@ class Motocycle(Vehicle):
         self.cc = cc
 
     def bike_detail(self):
-        self.v_detail()s
+        self.v_detail()
         print(f'CC : {self.cc}')
 
     
